@@ -1,6 +1,6 @@
 <html>
 <head>
-	
+
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -42,7 +42,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="home.html">Home
+            <a class="nav-link" href="index.html">Home
             </a>
           </li>
           <li class="nav-item ">
@@ -81,7 +81,7 @@
   <!-- Navbar -->
 
 <div style="background: blue"></div>
-	<?php  
+	<?php
 	$dbhost = "localhost";
 	$port='8080';
 	$server=$dbhost . ':' . $port;
@@ -111,86 +111,86 @@
     $result4 = $link->query($sql4);
     $v = 1;
     if ( $result->num_rows>0) {
-    	
+
             while($row = $result->fetch_assoc()){
             	$p =1;
             echo "<p ><h2 style='color:black'>Project".$v."</h2>";
             echo "<h4 style='color:blue'>Field : Computer Science</h4>";
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Project Name:  '.$row['project_name']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Description About the project:  '.$row['detail']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Working Members:  '.$row['members']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Completion Details:  '.$row['completion_detail']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Link To Project files:  '.$row['link_to_project']."</h4>"; 
-            $v +=1; 
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Project Name:  '.$row['project_name']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Description About the project:  '.$row['detail']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Working Members:  '.$row['members']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Completion Details:  '.$row['completion_detail']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Link To Project files:  '.$row['link_to_project']."</h4>";
+            $v +=1;
         }
-	
-    } 
+
+    }
      if ( $result1->num_rows>0) {
-            
+
             while($row = $result1->fetch_assoc()){
             	$p =1;
             	 echo "<p ><h2 style='color:black'>Project".$v."</h2>";
             	 echo "<h4 style='color:blue'>Field : Machine_Learning</h4>";
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Project Name:  '.$row['project_name']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Description About the project:  '.$row['detail']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Working Members:  '.$row['members']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Completion Details:  '.$row['completion_detail']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Link To Project files:  '.$row['link_to_project']."</h4>"; 
-            $v +=1;   
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Project Name:  '.$row['project_name']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Description About the project:  '.$row['detail']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Working Members:  '.$row['members']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Completion Details:  '.$row['completion_detail']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Link To Project files:  '.$row['link_to_project']."</h4>";
+            $v +=1;
         }
-	
-    } 
+
+    }
      if ( $result2->num_rows>0) {
-    	
+
             while($row = $result2->fetch_assoc()){
             	$p =1;
             	 echo "<p ><h2 style='color:black'>Project".$v."</h2>";
             	 echo "<h4 style='color:blue'>Field : Energy_Resources</h4>";
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Project Name:  '.$row['project_name']."</h4>";$p +=1; 
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Project Name:  '.$row['project_name']."</h4>";$p +=1;
             echo "<p ><h4 style='color:mediumorchid'>".$p.' Description About the project:  '.$row['detail']."</h4>";$p +=1;
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Working Members:  '.$row['members']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Completion Details:  '.$row['completion_detail']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Link To Project files:  '.$row['link_to_project']."</h4>";  
-            $v +=1;  
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Working Members:  '.$row['members']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Completion Details:  '.$row['completion_detail']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Link To Project files:  '.$row['link_to_project']."</h4>";
+            $v +=1;
         }
-	
-    } 
+
+    }
      if ( $result3->num_rows>0) {
-    	
+
             while($row = $result3->fetch_assoc()){
             	$p =1;
             	 echo "<p ><h2 style='color:black'>Project".$v."</h2>";
             	  echo "<h4 style='color:blue'>Field : Electronics</h4>";
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Project Name:  '.$row['project_name']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Description About the project:  '.$row['detail']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Working Members:  '.$row['members']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Completion Details:  '.$row['completion_detail']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Link To Project files:  '.$row['link_to_project']."</h4>"; 
-            $v +=1;   
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Project Name:  '.$row['project_name']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Description About the project:  '.$row['detail']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Working Members:  '.$row['members']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Completion Details:  '.$row['completion_detail']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Link To Project files:  '.$row['link_to_project']."</h4>";
+            $v +=1;
         }
-	
-    } 
+
+    }
      if ( $result4->num_rows>0) {
-    	
+
             while($row = $result4->fetch_assoc()){
             	$p =1;
             	 echo "<p ><h2 style='color:black'>Project Idea".$v."</h2>";
             	  echo "<h4 style='color:blue'>Researcher Ideas</h4>";
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Topic:  '.$row['Topic']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Description about the idea:  '.$row['Description']."</h4>";$p +=1; 
-            echo "<p ><h4 style='color:mediumorchid'>".$p.' Researcher Name:  '.$row['Name']."</h4>";$p +=1; 
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Topic:  '.$row['Topic']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Description about the idea:  '.$row['Description']."</h4>";$p +=1;
+            echo "<p ><h4 style='color:mediumorchid'>".$p.' Researcher Name:  '.$row['Name']."</h4>";$p +=1;
             echo "<p ><h4 style='color:mediumorchid'>".$p.' Email:  '.$row['Email']."</h4>";
-            $v +=1;    
+            $v +=1;
         }
-	
-    } 
-	if($v==1) 
+
+    }
+	if($v==1)
 	{
 	    echo "No Results";
 	    echo "Error: " . $sql . "<br>" . $link->error;
 	}
 
-	
+
 	?>
 
 <!--Footer-->
@@ -268,6 +268,6 @@
   </script>
 
 
-	 
+
   </body>
   </html>

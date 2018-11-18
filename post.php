@@ -46,7 +46,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="home.html">Home
+            <a class="nav-link" href="index.html">Home
             </a>
           </li>
           <li class="nav-item ">
@@ -77,7 +77,7 @@
     </div>
   </nav>
   <!-- Navbar -->
-  
+
 <?php
 $dbhost = "localhost";
 $port='8080';
@@ -108,7 +108,7 @@ $sql = "INSERT INTO Ideas (Name,Email,Topic,Description)
 VALUES ('$name','$email','$topic','$description')";
 
 if ($link->query($sql) === TRUE) {
-    
+
 } else {
     echo "Error: " . $sql . "<br>" . $link->error;
 }
